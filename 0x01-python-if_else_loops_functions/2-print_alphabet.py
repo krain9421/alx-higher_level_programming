@@ -1,2 +1,5 @@
 #!/usr/bin/python3
-print("{}".format("abcdefghijklmnopqrstuvwxyz"))
+num = 0
+while num < 1:
+    print("{}".format("abcdefghijklmnopqrstuvwxyz"))
+    num = 1
