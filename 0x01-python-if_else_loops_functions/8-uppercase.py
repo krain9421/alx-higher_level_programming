@@ -9,7 +9,7 @@ def uppercase(str):
     i = 0
     while i < len(str):
         c = ord(str[i])
-        print("{}".format(chr(c-32) if islower(str[i] else chr(c), end="")
+        print("{}".format(chr(c-32) if islower(str[i]) else chr(c)), end="")
         i = i + 1
 
     print('')
