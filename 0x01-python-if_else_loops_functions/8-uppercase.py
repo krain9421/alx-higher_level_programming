@@ -8,3 +8,5 @@ def uppercase(str):
             print("{}".format(chr(ord(str[i]))), end="")
 
         i = i + 1
+
+    print('')
