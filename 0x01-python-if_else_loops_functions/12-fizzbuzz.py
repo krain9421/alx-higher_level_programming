@@ -10,7 +10,6 @@ def fizzbuzz():
                 print("Buzz", end=" \n")
             else:
                 print("Buzz", end=" ")
-
         elif m5 == 0 and m3 == 0:
             print("FizzBuzz", end=" ")
         else:
