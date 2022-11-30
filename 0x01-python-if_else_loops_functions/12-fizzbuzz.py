@@ -7,7 +7,7 @@ def fizzbuzz():
             print("Fizz", end=" ")
         elif m5 == 0 and m3 != 0:
             if i == 100:
-                print("Buzz", end=" ")
+                print("Buzz", end=" \n")
             else:
                 print("Buzz", end=" ")
 
@@ -15,5 +15,3 @@ def fizzbuzz():
             print("FizzBuzz", end=" ")
         else:
             print(i, end=" ")
-
-    print("")
