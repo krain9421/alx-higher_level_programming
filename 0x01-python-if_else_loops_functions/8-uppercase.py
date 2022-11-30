@@ -5,6 +5,7 @@ def islower(c):
     else:
         return (False)
 
+
 def uppercase(str):
     i = 0
     while i < len(str):
