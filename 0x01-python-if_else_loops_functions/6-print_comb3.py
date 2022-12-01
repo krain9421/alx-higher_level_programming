@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 n1 = 48
 n2 = 49
 for i in range(0, 10):
