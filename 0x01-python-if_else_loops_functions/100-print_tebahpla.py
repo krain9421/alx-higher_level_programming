@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-num = 0
-while num < 1:
-    print("{}".format("zYxWvUtSrQpOnMlKjIhGfEdCbA"), end="")
-    num = 1
+for c in range(122, 96, -1):
+    if c % 2 != 0:
+        print(chr(c-32), end="")
+    else:
+        print(chr(c), end="")
