@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def main():
-    import hidden_4, sys
+    import hidden_4
+    import sys
     list = dir(hidden_4)
     list.sort()
     for c in list:
