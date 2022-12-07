@@ -18,8 +18,8 @@ def uniq_add(my_list=[]):
                     flag = 1
                     break
 
-                # Adds number to result if flag is 0
-                if flag == 0:
-                    result += x
+            # Adds number to result if flag is 0
+            if flag == 0:
+                result += x
             list_check.append(x)
             return result
