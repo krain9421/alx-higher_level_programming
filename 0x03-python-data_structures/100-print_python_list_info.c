@@ -12,7 +12,7 @@
 void print_python_list_info(PyObject *p)
 {
 	int i = 0;
-	long int sz;
+	long int sz = PyList_Size(p);
 	PyListObject *list = (PyListObject *)p;
 
 	printf("[*] Size of the Python List = %li\n", sz);
