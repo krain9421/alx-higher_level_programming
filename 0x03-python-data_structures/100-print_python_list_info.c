@@ -16,8 +16,8 @@ void print_python_list_info(PyObject *p)
 	PyListObject *list = (PyListObject *)p;
 
 	printf("[*] Size of the Python List = %li\n", sz);
-	printf("[*] Allocated = %li\n", obj->allocated);
-	for (i; i < sz; i++)
+	printf("[*] Allocated = %li\n", list->allocated);
+	for (; i < sz; i++)
 	{
 		printf("Element %d: %s\n", i, Py_TYPE(list->ob_item[i])->tp_name);
 
