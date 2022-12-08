@@ -7,6 +7,6 @@ def multiply_by_2(a_dictionary):
     # Loop through the items in the original dictionary
     for key, val in a_dictionary.items():
         # Multiply the value by 2 and store it
-        multiplied[key] = value * 2
+        multiplied[key] = val * 2
     # Return the new dictionary
     return multiplied
