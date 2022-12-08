@@ -10,4 +10,4 @@ def weight_average(my_list=[]):
         for row in my_list:
             weight_sum += row[0] * row[1]
             score_sum += row[1]
-        return (weight_sum//score_sum)
+        return (weight_sum/score_sum)
