@@ -14,7 +14,6 @@ def best_score(a_dictionary):
         if count == 0:
             val_max = val
             key_max = key
-            break
         # If the value is greater than the current maximum,
         #   update the maximum and the key
         if val > val_max:
