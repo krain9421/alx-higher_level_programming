@@ -4,6 +4,9 @@
 def best_score(a_dictionary):
     key_max = None
     val_max = float(-inf)
+    # Check if dictionary is None
+    if a_dictionary == None:
+        return None
     # Loop through the items in the dictionary
     for key, val in a_dictionary.items():
         # If the value is greater than the current maximum,
