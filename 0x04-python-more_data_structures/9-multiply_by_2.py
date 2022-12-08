@@ -9,4 +9,4 @@ def multiply_by_2(a_dictionary):
         # Multiply the value by 2 and store it
         multiplied[key] = value * 2
     # Return the new dictionary
-    return a_dictionary
+    return multiplied
