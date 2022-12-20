@@ -4,6 +4,8 @@
 # Return: False if a TypeError or ValueError occurs
 # True: otherwise
 import sys
+
+
 def safe_print_integer_err(value):
     try:
         print("{:d}".format(value))
