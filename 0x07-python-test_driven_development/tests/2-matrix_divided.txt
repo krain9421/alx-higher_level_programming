@@ -1,0 +1,53 @@
+=========================
+Using 2-matrix_divided.py
+=========================
+
+This module defines a matrix division function ``matrix_divided(matrix, div)``.
+
+Usage
+=====
+
+First import ``matrix_divided`` from the ``2-matrix_divided`` module":
+	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Now use it:
+	>>> matrix = [
+	...	[2, 4],
+	...	[6, 8]
+	... ]
+	>>> print(matrix_divided(matrix, 2))
+	[[1.0, 2.0], [3.0, 4.0]]
+
+The original matrix is left unchanged:
+	>>> print(matrix)
+	[[2, 4], [6, 8]]
+
+The function can also handle floating-point numbers:
+	>>> matrix = [
+	...     [2.2, 4.4],
+	...     [6.6, 8.8]
+	... ]
+	>>> print(matrix_divided(matrix, 2))
+	[[1.1, 2.2], [3.3, 4.4]]
+
+Invalid Matrices
+================
+
+The variable ``matrix`` must be a list of lists consisting of either ints or
+floats. 
+If ``matrix`` is not a list, a TypeError is raised:
+	>>> matrix = "list"
+	>>> print(matrix_divided(matrix, 2))
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+If ``matrix`` is an empty list, a TypeError is raised:
+	>>> matrix = []
+	>>> print(matrix_divided(matrix, 2))
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+If ``matrix`` is an empty list of lists, no error is raised:
+	>>> matrix = [[]]
+	>>> print(matrix_divided(matrix, 2))
+	[[]]
