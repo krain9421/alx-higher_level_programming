@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-"""Functon that returns the list of available attributes and methods
-    of an object
-"""
+"""Functon that returns the list of available attributes and methods"""
 
 
 def lookup(obj):
-    return (dir(obj))
+    list_of_attr = dir(obj)
+    return (list_of_attr)
