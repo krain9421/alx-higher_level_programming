@@ -13,4 +13,5 @@ def read_file(filename=""):
 
     with open(filename, encoding="utf-8") as myFile:
         """Printing the contents of the file"""
-        print(myFile.read())
+        for line in myFile:
+            print(line, end='')
