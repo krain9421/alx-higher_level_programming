@@ -8,6 +8,8 @@ def read_file(filename=""):
     Args:
         filename (string): name of the file to read
     """
-    if filename != "":
-        with open(filename, encoding="utf-8") as myFile:
-            print(myFile.read())
+    if not isinstance(filename, str):
+        raise TypeError("File name must be a string!")
+
+    with open(filename, encoding="utf-8") as myFile:
+        print(myFile.read())
