@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Read File"""
+"""Program that reads a text file and prints out the contents to stdout"""
 
 
 def read_file(filename=""):
-    """ Function reads a text file (UTF8) and prints it to stdout
+    """Prints out the contents of a text file to the stdout
 
     Args:
         filename (string): name of the file to read
