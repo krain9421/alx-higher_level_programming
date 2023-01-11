@@ -6,10 +6,11 @@ def read_file(filename=""):
     """Prints out the contents of a text file to the stdout
 
     Args:
-        filename (string): name of the file to read
+        filename(string): name of the file to read
     """
     if not isinstance(filename, str):
         raise TypeError("File name must be a string!")
 
     with open(filename, encoding="utf-8") as myFile:
+        """Printing the contents of the file"""
         print(myFile.read())
