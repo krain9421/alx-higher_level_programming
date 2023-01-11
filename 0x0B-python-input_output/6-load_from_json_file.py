@@ -10,6 +10,6 @@ def load_from_json_file(filename):
         filename(string): text file
     """
 
-    with open(filename, "w") as myFile:
+    with open(filename, "r") as myFile:
         my_obj = json.load(myFile)
         return (my_obj)
