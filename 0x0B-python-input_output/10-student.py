@@ -25,6 +25,9 @@ class Student:
             attrs(list): List of attributes
         """
         if type(attrs) == list:
-            if all(type(x) == str for x in attrs):
-                return {i: getattr(self, i) for i in attrs if hasattr(self, i)}
-        return (self.__dict__)
+            for x in attrs:
+                if type(x) == str:
+                    pass
+                else
+                    return (self.__dict__)
+            return {i: getattr(self, i) for i in attrs if hasattr(self, i)}
