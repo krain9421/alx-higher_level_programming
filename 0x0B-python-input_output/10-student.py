@@ -30,4 +30,4 @@ class Student:
                     pass
                 else:
                     return (self.__dict__)
-            return {i: getattr(self, i) for i in attrs if hasattr(self, i)}
+        return {i: getattr(self, i) for i in attrs if hasattr(self, i)}
