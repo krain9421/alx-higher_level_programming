@@ -13,7 +13,7 @@ class BaseGeometry:
         """
         raise Exception("area() is not implemented")
 
-    def integer_validation(self, name, value):
+    def integer_validator(self, name, value):
         """Validates a value to be an integer
 
         Args:
