@@ -110,3 +110,14 @@ class Rectangle(Base):
             for w in range(self.__width):
                 print("#", end="")
             print("")
+
+    def __str__(self):
+        """Returns the printable representation
+            of the Rectangle instance
+        """
+        rect = "[Rectangle] (" + str(self.id)
+        rect += ") " + str(self.__x) + "/"
+        rect += "" + str(self.__y) + " - "
+        rect += "" + str(self.__width) + "/"
+        rect += "" + str(self.__height) + ""
+        return (rect)
