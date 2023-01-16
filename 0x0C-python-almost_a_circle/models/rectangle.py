@@ -18,7 +18,7 @@ class Rectangle(Base):
             y (int): The y position of the retangle
             id (int): The id of the object
         """
-        super().__init__(self, id)
+        super().__init__(id)
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
         elif width <= 0:
