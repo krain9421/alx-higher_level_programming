@@ -125,3 +125,21 @@ class Rectangle(Base):
         rect += "" + str(self.__width) + "/"
         rect += "" + str(self.__height) + ""
         return (rect)
+
+    def update(self, *args):
+        """Updates attributes of the Rectangle
+            instance
+        """
+        count = 0
+        for arg in args:
+            count += 1
+            if count == 1:
+                self.id = arg
+            elif count == 2:
+                self.__width = arg
+            elif count == 3:
+                self.__height = arg
+            elif count == 4:
+                self.__x = arg
+            else:
+                self.__y = arg
