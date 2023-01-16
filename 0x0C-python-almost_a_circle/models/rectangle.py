@@ -141,5 +141,5 @@ class Rectangle(Base):
                 self.__height = arg
             elif count == 4:
                 self.__x = arg
-            else:
+            elif count == 5:
                 self.__y = arg
