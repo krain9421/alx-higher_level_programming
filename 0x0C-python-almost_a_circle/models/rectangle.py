@@ -71,7 +71,7 @@ class Rectangle(Base):
     @property
     def x(self):
         """Gets the value of x position"""
-        return (self.__X)
+        return (self.__x)
 
     @x.setter
     def x(self, value):
