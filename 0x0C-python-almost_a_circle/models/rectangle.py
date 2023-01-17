@@ -137,12 +137,28 @@ class Rectangle(Base):
                 if count == 1:
                     self.id = arg
                 elif count == 2:
+                    if not isinstance(arg, int):
+                        raise TypeError("width must be an integer")
+                    elif arg <= 0:
+                        raise ValueError("width must be > 0")
                     self.__width = arg
                 elif count == 3:
+                    if not isinstance(arg, int):
+                        raise TypeError("height must be an integer")
+                    elif arg <= 0:
+                        raise ValueError("height must be > 0")
                     self.__height = arg
                 elif count == 4:
+                    if not isinstance(arg, int):
+                        raise TypeError("x must be an integer")
+                    elif arg < 0:
+                        raise ValueError("x must be >= 0")
                     self.__x = arg
                 elif count == 5:
+                    if not isinstance(arg, int):
+                        raise TypeError("y must be an integer")
+                    elif arg < 0:
+                        raise ValueError("y must be >= 0")
                     self.__y = arg
                 else:
                     pass
