@@ -143,3 +143,5 @@ class Rectangle(Base):
                 self.__x = arg
             elif count == 5:
                 self.__y = arg
+            else:
+                pass
