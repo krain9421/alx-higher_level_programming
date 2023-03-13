@@ -7,8 +7,7 @@
  * print “Missing size"
 */
 
-const msg1 = 'Missing number of occurences';
-const X = 'X';
+const msg1 = 'Missing size';
 let txt = '';
 let i = 0; // Index for looping
 let j = 0; // Index for looping
