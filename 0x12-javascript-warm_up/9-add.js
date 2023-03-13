@@ -9,7 +9,7 @@
 let num1 = 0;
 let num2 = 0;
 
-function add(a, b) {
+function add (a, b) {
   return a + b;
 }
 
@@ -17,4 +17,3 @@ function add(a, b) {
 num1 = parseInt(process.argv[2]);
 num2 = parseInt(process.argv[3]);
 console.log(add(num1, num2));
-
