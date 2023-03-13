@@ -9,7 +9,6 @@
 
 const msg1 = 'Missing number of occurences';
 const msg2 = 'C is fun';
-const len = process.argv.length;
 let i = 0; // Index for looping
 
 // The Loop
