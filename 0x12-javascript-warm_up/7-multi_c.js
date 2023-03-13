@@ -13,14 +13,10 @@ const len = process.argv.length;
 let i = 0; // Index for looping
 
 // The Loop
-if (len === 2) {
+if (!parseInt(process.argv[2])) {
   console.log(msg1);
 } else {
-  if (!parseInt(process.argv[2])) {
-    console.log(msg1);
-  } else {
-    for (i; i < process.argv[2]; i++) {
-      console.log(msg2);
-    }
+  for (i; i < process.argv[2]; i++) {
+    console.log(msg2);
   }
 }
