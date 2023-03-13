@@ -12,7 +12,6 @@ process.argv.forEach((val, index) => {
   len += 1;
 });
 
-
 if (len === 2) {
   console.log(msg1);
 } else {
