@@ -9,6 +9,7 @@
 const len = process.argv.length;
 let len2 = 0;
 let argvNew = [];
+let i = 0; // Integer for indexing
 
 // Checking the command arguments
 if (len >= 2 && len <= 3) {
@@ -16,7 +17,14 @@ if (len >= 2 && len <= 3) {
 } else {
   len2 = process.argv.length;
   argvNew = process.argv.slice(2, len2);
-  argvNew.sort();
+  argvNew.sort((a, b) => a - b);
   len2 = argvNew.length;
+  
+  for (i = len2 - 2; i >= 0; i--) {
+    if (argvNew[i] != argvNew[len - 1]) {
+      console.log(argvNew[i]);
+      return;
+    }
+  }
   console.log(argvNew[len2 - 2]);
 }
