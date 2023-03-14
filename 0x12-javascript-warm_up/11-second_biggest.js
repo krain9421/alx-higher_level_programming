@@ -23,7 +23,7 @@ if (len >= 2 && len <= 3) {
   for (i = len2 - 2; i >= 0; i--) {
     if (argvNew[i] != argvNew[len - 1]) {
       console.log(argvNew[i]);
-      return;
+      break;
     }
   }
   console.log(argvNew[len2 - 2]);
