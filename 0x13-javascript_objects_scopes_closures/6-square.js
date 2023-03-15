@@ -17,8 +17,8 @@ module.exports = class Square extends require('./5-square.js') {
       for (let j = 0; j < this.height; j++) {
         txt += c;
       }
-    console.log(txt);
-    txt = '';
+      console.log(txt);
+      txt = '';
     }
   }
 };
