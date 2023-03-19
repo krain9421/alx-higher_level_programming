@@ -17,6 +17,6 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     # Executing the MySQL Queries
-    curr.execute("SELECT `name` FROM states ORDER BY `id` DESC;")
-    rows = c.fetchall()
+    cur.execute("SELECT `name` FROM states ORDER BY `id` DESC;")
+    rows = cur.fetchall()
     for state in rows print(state)
