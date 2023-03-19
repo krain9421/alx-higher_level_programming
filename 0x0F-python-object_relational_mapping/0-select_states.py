@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# Script that lists all states from database hbtn_0e_0_usa
 import sys
 import MySQLdb as sql
 
@@ -15,4 +16,5 @@ cur = db.cursor()
 
 # Executing the MySQL Queries
 curr.execute("SELECT `name` FROM states ORDER BY `id` DESC;")
-print(cur.fetchall())
+rows = c.fetchall()
+print(state) for state in rows
