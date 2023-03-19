@@ -3,6 +3,7 @@
 import sys
 import MySQLdb as sql
 
+
 if __name__ = "__main__":
     # Store the argument values
     username = sys.argv[1]
@@ -18,4 +19,4 @@ if __name__ = "__main__":
     # Executing the MySQL Queries
     curr.execute("SELECT `name` FROM states ORDER BY `id` DESC;")
     rows = c.fetchall()
-    print(state) for state in rows
+    for state in rows print(state)
