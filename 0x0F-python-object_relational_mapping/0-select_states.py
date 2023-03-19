@@ -11,7 +11,7 @@ if __name__ == "__main__":
     database = sys.argv[3]
 
     # Connecting to a MySQL database
-    db = sql.connect(host="3306", user=username, passwd=password, db=database)
+    db = sql.connect(user=username, passwd=password, db=database)
 
     # Getting a Cursor
     cur = db.cursor()
