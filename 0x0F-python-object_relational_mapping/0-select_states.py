@@ -19,4 +19,5 @@ if __name__ == "__main__":
     # Executing the MySQL Queries
     cur.execute("SELECT `name` FROM states ORDER BY `id` DESC;")
     rows = cur.fetchall()
-    for state in rows print(state)
+    for state in rows:
+        print(state)
