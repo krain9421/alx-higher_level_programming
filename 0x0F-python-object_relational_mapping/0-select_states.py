@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # Script that lists all states from database hbtn_0e_0_usa
 import sys
-import MySQLdb as sql
+import MySQLdb
 
 
 if __name__ == "__main__":
@@ -11,7 +11,7 @@ if __name__ == "__main__":
     database = sys.argv[3]
 
     # Connecting to a MySQL database
-    db = sql.connect(user=username, passwd=password, db=database)
+    db = MySQLdb.connect(user=username, passwd=password, db=database)
 
     # Getting a Cursor
     cur = db.cursor()
