@@ -16,15 +16,6 @@ if __name__ == "__main__":
     database = sys.argv[3]
     state_name = sys.argv[4]
 
-    # Parsing the name argument (Mitigating MySQL inject)
-    i = -1
-    for char in state_name:
-        i++
-        if not char.isalpha():
-            break
-
-    state_name = state_name[:i]
-
     # Connecting to a MySQL database
     db = MySQLdb.connect(user=username, passwd=password, db=database)
 
@@ -32,12 +23,12 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     # Executing the MySQL Queries
-    query_literal = "SELECT * FROM states WHERE name LIKE BINARY %s;"
-    query = query_literal.format(state_name)
-    cur.execute(query_literal, state_name)
+    query_literal = "SELECT * FROM states"
+    cur.execute(query_literal)
     rows = cur.fetchall()
     for row in rows:
-        print("{}".format(row))
+        if row[1] == state_name:
+            print("{}".format(row))
     # Close all cursors
     cur.close()
     # Close all databases
