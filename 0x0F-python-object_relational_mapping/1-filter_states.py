@@ -20,10 +20,10 @@ if __name__ == "__main__":
 
     # Executing the MySQL Queries
     # cur.execute("SELECT * FROM `states` WHERE name LIKE 'N%';")
-    cur.execute("SELECT * FROM `states`;")
+    cur.execute("SELECT * FROM `states` ORDER BY `id`;")
     rows = cur.fetchall()
     for row in rows:
-        if row[1][1] == 'N':
+        if row[1][0] == 'N':
             print("{}".format(row))
     # Close all cursors
     cur.close()
