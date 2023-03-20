@@ -19,11 +19,12 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     # Executing the MySQL Queries
-    # cur.execute("SELECT `name` FROM states ORDER BY `id` ASC;")
-    cur.execute("SELECT * FROM `states` WHERE name LIKE 'N%';")
+    # cur.execute("SELECT * FROM `states` WHERE name LIKE 'N%';")
+    cur.execute("SELECT * FROM `states`;")
     rows = cur.fetchall()
     for row in rows:
-        print("{}".format(row))
+        if row[1][1] == 'N':
+            print("{}".format(row))
     # Close all cursors
     cur.close()
     # Close all databases
