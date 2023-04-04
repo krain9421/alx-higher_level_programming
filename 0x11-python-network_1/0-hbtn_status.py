@@ -9,7 +9,7 @@ if __name__ == "__main__":
 
     # Handling URLError
     try:
-        with urllib.request.urlopen(req) as response:
+        with urllib.request.urlopen(req2) as response:
             content = response.read()
             content_type = type(content)
             content_utf = content.decode("utf8")
@@ -18,6 +18,13 @@ if __name__ == "__main__":
         print("\t- type: {}".format(content_type))
         print("\t- content: {}".format(content))
         print("\t- utf8 content: {}".format(content_utf))
+        pass
+
+    except urllib.error.URLError as e:
+        print(e.reason)
+        pass
 
     except urllib.error.HTTPError as e:
-        print("Error code: {}".format(e.code))
+        print(e.code)
+        print(e.read())
+        pass
