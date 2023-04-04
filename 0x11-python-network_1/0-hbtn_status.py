@@ -4,12 +4,12 @@ import urllib.request
 
 
 if __name__ == "__main__":
-    # req = urllib.request.Request("https://intranet.hbtn.io/status")
-    # req2 = urllib.request.Request("http://0.0.0.0:5050/status")
+    req = urllib.request.Request("https://intranet.hbtn.io/status")
+    req2 = urllib.request.Request("http://0.0.0.0:5050/status")
 
     # Handling URLError
     try:
-        with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
+        with urllib.request.urlopen(req) as response:
             content = response.read()
             content_type = type(content)
             content_utf = content.decode("UTF-8")
@@ -20,4 +20,5 @@ if __name__ == "__main__":
         print("\t- utf8 content: {}".format(content_utf))
 
     except urllib.error.URLError as e:
-        print(e.reason)
+        # print(e.reason)
+        pass
