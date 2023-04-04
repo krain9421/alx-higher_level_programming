@@ -10,7 +10,7 @@ if __name__ == "__main__":
         content_type = type(content)
         content_utf = content.decode("UTF-8")
 
-        print("Body response:\n\
-        - type: {}\n\
-        - content: {}\n\
-        - utf8 content: {}".format(content_type, content, content_utf))
+        print("Body response:")
+        print("\t- type: {}".format(content_type))
+        print("\t- content: {}".format(content))
+        print("\t- utf8 content: {}".format(content_utf))
