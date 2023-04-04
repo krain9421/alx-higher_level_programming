@@ -9,7 +9,7 @@ if __name__ == "__main__":
 
     # Handling URLError
     try:
-        with urllib.request.urlopen(req2) as response:
+        with urllib.request.urlopen(req) as response:
             content = response.read()
             content_type = type(content)
             content_utf = content.decode("utf8")
