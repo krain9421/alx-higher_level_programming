@@ -8,7 +8,7 @@ if __name__ == "__main__":
     req2 = urllib.request.Request("http://0.0.0.0:5050/status")
 
     # Handling URLError
-    try:
+    """try:
         with urllib.request.urlopen(req) as response:
             content = response.read()
             content_type = type(content)
@@ -20,5 +20,14 @@ if __name__ == "__main__":
         print("\t- utf8 content: {}".format(content_utf))
 
     except urllib.error.URLError as e:
-        # print(e.reason)
-        pass
+        print(e.reason)
+    """
+    with urllib.request.urlopen(req) as response:
+        content = response.read()
+        content_type = type(content)
+        content_utf = content.decode("UTF-8")
+
+        print("Body response:")
+        print("\t- type: {}".format(content_type))
+        print("\t- content: {}".format(content))
+        print("\t- utf8 content: {}".format(content_utf))
